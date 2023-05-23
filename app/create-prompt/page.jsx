@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 import Form from "@components/Form";
+import { set } from "mongoose";
 
 const CreatePrompt = () => {
   const router = useRouter();
@@ -16,6 +17,7 @@ const CreatePrompt = () => {
   const createPrompt = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setPost({ prompt: "", tag: "" });
 
     try {
       const response = await fetch("/api/prompt/new", {
@@ -34,6 +36,7 @@ const CreatePrompt = () => {
       console.log(error);
     } finally {
       setIsSubmitting(false);
+      console.log("Prompt Created");
     }
   };
 

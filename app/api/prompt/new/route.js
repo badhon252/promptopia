@@ -1,5 +1,6 @@
 import Prompt from "@models/prompt";
 import { connectToDB } from "@utils/database";
+import mongoose from "mongoose";
 
 export const POST = async (request) => {
   const { userId, prompt, tag } = await request.json();

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "d": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,6 +12,7 @@
     "autoprefixer": "10.4.14",
     "bcrypt": "^5.1.0",
     "mongodb": "^5.5.0",
+    "mongodb-client-encryption": "^2.8.0",
     "mongoose": "^7.2.0",
     "next": "13.4.3",
     "next-auth": "^4.22.1",
@@ -19,5 +20,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "eslint": "^8.41.0",
+    "eslint-plugin-react": "^7.32.2"
   }
 }
