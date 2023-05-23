@@ -5,7 +5,7 @@ import Provider from "@components/Provider";
 export const metadata = {
   title: "PromptVerse",
   description:
-    "Promptopia is a place to find writing prompts and share your own.",
+    "PromptVerse is a place to find writing prompts and share your own.",
 };
 
 export default function RootLayout({ children }) {
