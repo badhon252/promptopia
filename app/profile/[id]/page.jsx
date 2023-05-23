@@ -6,7 +6,6 @@ import { useSearchParams } from "next/navigation";
 import Profile from "@components/Profile";
 
 const UserProfile = ({ params }) => {
-  console.log("Params: ", params);
   const searchParams = useSearchParams();
   const userName = searchParams.get("name");
 
@@ -16,8 +15,6 @@ const UserProfile = ({ params }) => {
     const fetchPosts = async () => {
       const response = await fetch(`/api/user/${params?.id}/posts`);
       const data = await response.json();
-
-      console.log("Data: ", data);
 
       setUserPosts(data);
     };
