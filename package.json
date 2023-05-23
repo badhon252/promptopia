@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "d": "next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@aws-sdk/credential-providers": "^3.337.0",
+    "@aws-sdk/util-user-agent-node": "^3.337.0",
+    "@mongodb-js/zstd": "^1.1.0",
     "autoprefixer": "10.4.14",
+    "aws-crt": "^1.15.16",
+    "aws4": "^1.12.0",
     "bcrypt": "^5.1.0",
+    "gcp-metadata": "^5.2.0",
+    "kerberos": "^2.0.1",
     "mongodb": "^5.5.0",
     "mongodb-client-encryption": "^2.8.0",
     "mongoose": "^7.2.0",
@@ -20,6 +26,7 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "snappy": "^7.2.2",
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
