@@ -3,7 +3,7 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  title: "Propmptopia",
+  title: "PromptVerse",
   description:
     "Promptopia is a place to find writing prompts and share your own.",
 };
