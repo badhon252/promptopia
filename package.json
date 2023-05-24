@@ -9,12 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aws-sdk/credential-providers": "^3.337.0",
-    "@aws-sdk/util-user-agent-node": "^3.337.0",
     "@mongodb-js/zstd": "^1.1.0",
     "autoprefixer": "10.4.14",
-    "aws-crt": "^1.15.16",
-    "aws4": "^1.12.0",
     "bcrypt": "^5.1.0",
     "gcp-metadata": "^5.2.0",
     "kerberos": "^2.0.1",
