@@ -4,7 +4,9 @@ module.exports = {
     rules: [
       {
         test: /\.(node)$/,
-        use: "node-loader",
+        use: {
+          loader: "node-loader",
+        },
       },
     ],
   },
