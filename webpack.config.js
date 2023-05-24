@@ -1,12 +1,15 @@
 module.exports = {
-  // ... other webpack config options
+  // Other Webpack configuration options...
   module: {
     rules: [
+      // Other rules...
       {
-        test: /\.(node)$/,
-        use: {
-          loader: "node-loader",
-        },
+        test: /\.node$/,
+        use: [
+          {
+            loader: "node-loader",
+          },
+        ],
       },
     ],
   },

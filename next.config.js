@@ -7,11 +7,17 @@ const nextConfig = {
   images: {
     domains: ["lh3.googleusercontent.com"],
   },
-  webpack(config) {
+  webpack: (config) => {
     config.experiments = {
       ...config.experiments,
       topLevelAwait: true,
     };
+
+    config.module.rules.push({
+      test: /\.(node)$/,
+      use: "node-loader",
+    });
+
     return config;
   },
 };
