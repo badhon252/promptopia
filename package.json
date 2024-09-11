@@ -16,7 +16,7 @@
     "kerberos": "^2.0.1",
     "mongodb": "^5.5.0",
     "mongodb-client-encryption": "^2.8.0",
-    "mongoose": "^7.2.0",
+    "mongoose": "^7.3.3",
     "next": "13.4.3",
     "next-auth": "^4.22.1",
     "postcss": "8.4.31",
